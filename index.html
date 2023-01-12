@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>Simple Task Board</header>
+    <main>
+      <form class="input_task" id="add_task">
+        <input type ="text" id="title" type="text" placeholder="Title" /><br />
+        <textarea type ="text" id="description" rows="5" cols="40" placeholder="Description"></textarea><br />
+        <button type = submit class="todo__add">Create</button>
+      </form>
+      <div class="board">
+        <ul class="todo">
+          <h2 class="block">To Do</h2>
+          <div id="to_do_list"></div>
+        </ul>
+        <button id="move_task_progress" disabled> > </button>
+        <ul class="inprogress">
+          <h2 class="block">
+            <p>In progress</p>
+          </h2>
+          <div id="in_progress_list">
+        </ul>
+        <button id="move_task_done" disabled>></button>
+        <ul class="done">
+          <h2 class="block">
+            <p>Done</p>
+          </h2>
+          <div id="done_list">
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
